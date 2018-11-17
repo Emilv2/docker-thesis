@@ -11,8 +11,7 @@ RUN mkdir -p /usr/share/man/man1 && \
       latexmk \
       make \
       texlive-full \
-      bash \
-      unzip
+      bash
   
 ENV VERSION 0.6
 ADD https://github.com/sylvainhalle/textidote/releases/download/vVERSION/textidote.jar
