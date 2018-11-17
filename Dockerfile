@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
       biber \
       latexmk \
       make \
-      texlive-full
+      texlive-full \
       bash \
       openjdk-8-jre-headless \
       unzip
