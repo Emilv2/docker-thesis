@@ -16,9 +16,3 @@ ADD https://www.languagetool.org/download/LanguageTool-$VERSION.zip /LanguageToo
 
 RUN unzip LanguageTool-$VERSION.zip \
     && rm LanguageTool-$VERSION.zip
-
-RUN apt-get update && apt-get install -y \
-      biber \
-      latexmk \
-      make \
-      texlive-full
