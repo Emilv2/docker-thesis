@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install -y \
       make \
       texlive-full \
       bash \
-      openjdk-8-jre-headless \
       unzip
 
 ENV VERSION 4.3
