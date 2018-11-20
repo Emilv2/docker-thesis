@@ -10,6 +10,7 @@ RUN mkdir -p /usr/share/man/man1 && \
       latexmk \
       make \
       texlive-full \
+      texlive-latex-extra \
       bash
   
 ENV VERSION 0.6
