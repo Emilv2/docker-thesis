@@ -14,7 +14,7 @@ RUN mkdir -p /usr/share/man/man1 && \
       hunspell-fr \
       hunspell-en-us \
       hunspell-nl \
-      make
+      git
   
 ENV VERSION 0.6
 ADD https://github.com/sylvainhalle/textidote/releases/download/v$VERSION/textidote.jar /opt/textidote/textidote.jar
