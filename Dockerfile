@@ -10,7 +10,11 @@ RUN mkdir -p /usr/share/man/man1 && \
       make \
       texlive-full \
       texlive-latex-extra \
-      bash
+      hunspell \
+      hunspell-fr \
+      hunspell-en-us \
+      hunspell-nl \
+      make
   
 ENV VERSION 0.6
 ADD https://github.com/sylvainhalle/textidote/releases/download/v$VERSION/textidote.jar /opt/textidote/textidote.jar
