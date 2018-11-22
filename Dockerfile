@@ -18,5 +18,5 @@ RUN mkdir -p /usr/share/man/man1 && \
   
 ENV VERSION 0.6
 ADD https://github.com/sylvainhalle/textidote/releases/download/v$VERSION/textidote.jar /opt/textidote/textidote.jar
-RUN echo $'#!/bin/bash\njava -jar /opt/textidote/textidote.jar "$@"' > /usr/bin/textidote \
+RUN echo $'#!/bin/sh\njava -jar /opt/textidote/textidote.jar "$@"' > /usr/bin/textidote \
       chmod +x /usr/bin/textidote
