@@ -10,6 +10,7 @@ RUN mkdir -p /usr/share/man/man1 && \
       make \
       texlive-full \
       texlive-latex-extra \
+      poppler-utils \
       hunspell \
       hunspell-fr \
       hunspell-en-us \
