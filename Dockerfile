@@ -22,7 +22,7 @@ RUN mkdir -p /usr/share/man/man1 && \
       locales-all \
       && apt-get clean
 
-ENV VERSION 0.6
+ENV VERSION 0.7.1
 ADD https://github.com/sylvainhalle/textidote/releases/download/v$VERSION/textidote.jar /opt/textidote/textidote.jar
 RUN echo $'#!/bin/sh\njava -jar /opt/textidote/textidote.jar "$@"' > /usr/bin/textidote && \
       chmod +x /usr/bin/textidote
